@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Hello Coursera</title>
+	<title>capital country</title>
+	<style>
+		h1{
+			color: #00FFFF;
+			font-size: 130%;
+			text-align: center;
+		}
+	</style>
+	<script type="text/javascript">
+		function Ondrop(dropDown)
+		{
+			var selectedValue=dropDown.options[dropDown.selectedIndex].value;
+			document.getElementById("txt1").innerHTML=selectedValue;
+		}
+	</script>
 </head>
 <body>
-<h1>Hello Coursera hahaha hello</h1>
-<h2>Happy Birthday handsome</h2>
-<pre>..........................................</pre>
-<b>Madhu</b>
-</body>
+<form action="">
+	<select name="Countries" onChange="Ondrop(this)">
+		<option value="">--Select a country--</option>
+		<option value="New Delhi">India</option>
+		<option value="Wellington">New Zealand</option>
+		<option value="Canberra">Australia</option>
+		<option value="Paris">France</option>
+		<option value="Cape Town">South Africa</option>
+	</select>
+	<h1 id="txt1" type="text"></h1>
+</form>
 </body>
 </html>
