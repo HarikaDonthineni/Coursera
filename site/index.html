@@ -3,10 +3,31 @@
 <head>
 	<title>capital country</title>
 	<style>
+		body{
+			background-image: url("pic1.jpg");
+			background-size: 100%;
+		}
 		h1{
-			color: #00FFFF;
-			font-size: 130%;
-			text-align: center;
+			color: #000000;
+			font-size: 300%;
+		}
+		.drop{
+			background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+		}
+		.drop:hover{
+			display:block;
+			background-color: black;
+			color:white;
+		}
+		.ab{
+			position: relative;
+			top:100px;
+			left: 150px;
+			width:50%;	
 		}
 	</style>
 	<script type="text/javascript">
@@ -19,7 +40,9 @@
 </head>
 <body>
 <form action="">
-	<select name="Countries" onChange="Ondrop(this)">
+	<div>
+		<div class="ab">
+	<select name="Countries" onChange="Ondrop(this)" class="drop">
 		<option value="">--Select a country--</option>
 		<option value="New Delhi">India</option>
 		<option value="Wellington">New Zealand</option>
@@ -27,7 +50,11 @@
 		<option value="Paris">France</option>
 		<option value="Cape Town">South Africa</option>
 	</select>
+</div>
+<div class="ab">
 	<h1 id="txt1" type="text"></h1>
+</div>
+</div>
 </form>
 </body>
 </html>
