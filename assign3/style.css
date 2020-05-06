@@ -1,7 +1,15 @@
 *{
 	box-sizing:border-box;
 }
-
+#header-nav{
+	background-color:grey;
+	border-radius: 0;
+	border:0;
+}
+header{
+	height:100px;
+	background-color: grey;
+}
 div{
 	height:50%;
 }
@@ -11,12 +19,19 @@ body{
 	background-color:green;
 	font-family: cursive;
 }
-h1{
-	text-align: center;
-	font-family:Helvetica;
+.navbar-brand h1{
+	float: left;
+	font-family:cursive;
 	color:white;
+	font-size: 1.5em;
+	text-shadow: 4px 1px 4px #333;
+	text-transform: uppercase;
+	font-weight: bold;
 }
-span{
+.navbar-brand a:hover, .navbar-brand a:focus{
+	text-decoration: none;
+}
+.one{
 	float:right;
 	clear: left;
 	padding:1px 1px;
@@ -46,6 +61,28 @@ span{
 }
 #sp3{
 	background-color: #AAAA00;
+}
+#nav-list{
+	margin-top:10px;
+}
+#nav-list a{
+	background-color: white;
+	padding: 3px;
+	color:black;
+	text-align: center;
+}
+#nav-list a:hover {
+   background-color:black;
+   color:white;
+}
+#nav-list a span{
+	font-size: 1.8em;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+	border: 2px solid #61122f;
+}
+.navbar-header button.navbar-toggle{
+	clear:both;
 }
 @media (min-width:992px)
 {
@@ -81,4 +118,12 @@ span{
 		margin-left:5%;
 		margin-bottom:3.33%;
 	}
+	button{
+	float:right;
+	margin-top: 5px;
+	height: 40px;
+	width: 40px;
 }
+}
+
+
