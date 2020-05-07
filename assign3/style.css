@@ -6,13 +6,10 @@
 	border-radius: 0;
 	border:0;
 }
-header{
-	height:100px;
-	background-color: grey;
+#header-nav button{
+	margin-top=22px;
 }
-/*div{
-	height:50%;
-}*/
+
 body{
 	margin:0;
 	padding:0;
@@ -28,7 +25,21 @@ body{
 	text-transform: uppercase;
 	font-weight: bold;
 }
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+	background-color: yellow;
+}
 .navbar-brand a:hover, .navbar-brand a:focus{
+	text-decoration: none;
+}
+.navbar-collapse{
+	border-top:0;
+}
+.navbar-brand, .navbar-nav li a{
+	line-height: 76px;
+	height:76px;
+	padding-top: 0;
+}
+.navbar-brand a:hover{
 	text-decoration: none;
 }
 .one{
@@ -37,12 +48,15 @@ body{
 	padding:1px 1px;
 	border-style:solid;
 	border-top-style: none;
-	border-right-width: 2px;
+	border-right-style:none;
 	border-bottom-width:2px;
 	border-left-width: 2px;
 	border-color:black;
 }
-.quote{
+#Kobe,#Samuel,#Ralph{
+	overflow: scroll;
+	height:150px;
+	width:100%;
 	background-color: white;
 	float:left;
 	border-style: solid;
@@ -64,6 +78,7 @@ body{
 }
 #nav-list{
 	margin-top:10px;
+	background-color: brown;
 }
 #nav-list a{
 	background-color: white;
@@ -75,68 +90,37 @@ body{
    background-color:black;
    color:white;
 }
-#nav-list a span{
+#nav-list li a {
 	font-size: 1.8em;
 }
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar{
-	border: 2px solid #61122f;
-}
-.navbar-header button.navbar-toggle{
-	clear:both;
+	border: 2px solid black;
 }
 
-@media (min-width:992px)
-{
-	.quote{
-		min-height: 200px;
-		width:30%;
-        margin-left:2.5%;
-	}
+
+#main-content {
+    width: 92%;
+    margin-bottom: 30px;
 }
-@media (min-width:768px) and (max-width: 991px) {
-  #q1 {
-    width: 45%;
-    min-height: 150px;
-    margin-left:3.33%;
-    margin-bottom:5%;
-  }
-  #q2{
-  	min-height: 150px;
-  	width: 45%;
-  	margin-left:3.33%;
-    margin-bottom:3.33%;
-  }
-  #q3{
-  	min-height: 150px;
-  	width:93.44%;
-  	margin-left: 3.33%;
-  }
+
+#main-content h2 {
+    font-size: 2.9em;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
-@media (max-width:991px){
-	.quote{
-		min-height:150px;
-		width:90%;
-		margin-left:5%;
-		margin-bottom:3.33%;
-	}
-	button{
-	float:right;
-	margin-top: 5px;
-	height: 40px;
-	width: 40px;
-}
-}
-li {
-	margin-bottom: 1px solid black;
-	text-align: center;
-	padding: 0px;
+#Inspiration, #Motivation,#Strength{
 	width: 100%;
+    padding: 20px;
+    background-color: grey;
+    margin-bottom: 60px;
 }
-ul {
-	list-style-type: none;
-	font-size: 1.5em;
-	width: 100%;
-	padding: 0px;
+
+@media (min-width: 768px){
+.navbar-toggle {
+     display: none; 
 }
+}
+
 
 
